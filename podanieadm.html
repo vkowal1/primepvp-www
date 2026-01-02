@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>EternalRP - Podanie do Administracji</title>
+    <title>PrimePvP - Podanie do Administracji</title>
     <link rel="shortcut icon" href="logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="logo">
                     <img src="logo.png" alt="Logo EternalRP">
-                    <h1>EternalRP</h1>
+                    <h1>PrimePvP</h1>
                 </div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
                 <ul>
@@ -57,7 +57,7 @@
                         <textarea id="wniesiesz" name="wniesiesz" required></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="spladka">Czy jesteś wstanie płacić miesięczne składki ok. 10/15 zł? (nie wymagane)</label>
+                        <label for="spladka">Czy byłeś w administracji na innym serverze. (Jeśli tak to na jakim)</label>
                         <input type="text" id="spladka" name="spladka" required>
                     </div>
                     <div class="form-group">
@@ -73,7 +73,7 @@
                     form.addEventListener("submit", (event) => {
                       event.preventDefault();
                       const formData = new FormData(event.target);
-                      const webhookUrl = "https://discord.com/api/webhooks/1156960016146898944/Kk6akbconozOHRkn-GH8ifjz4fJfJ8hoI4WT4SLXA2iIWU4--cn3XhBk7QZP88GubJ97";
+                      const webhookUrl = "https://discordapp.com/api/webhooks/1456732285071261833/nnR2bM-adzs6WRDV_zkoyJ_k-YqodKmz0bv8qukCzAdDx01P-JkAb4TufxwbaO639KMS";
                       const payload = {
                         content: "Nowe podanie do Administracji!",
                         embeds: [
@@ -86,7 +86,7 @@
                               { name: "Twoje Doświadczenie jako administrator:", value: formData.get("admdos"), inline: true },
                               { name: "Opisz siebie w jednym zdaniu:", value: formData.get("sbjzd") },
                               { name: "Co jesteś wstanie wnieść do administracji?:", value: formData.get("wniesiesz") },
-                              { name: "Czy jesteś wstanie płacić miesięczne składki ok. 10/15 zł? (nie wymagane):", value: formData.get("spladka"), inline: true },
+                              { name: "Czy byłeś w administracji na innym serverze. (Jeśli tak to na jakim):", value: formData.get("spladka"), inline: true },
                               { name: "List motywacyjny min. 50 słów:", value: formData.get("motywacyjny") },
                             ],
                           },
@@ -111,8 +111,8 @@
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2023 EternalRP. Wszelkie prawa zastrzeżone.</p>
-            <p>Created by SKYT#0001</p>
+            <p>&copy; 2026 PrimePvP. Wszelkie prawa zastrzeżone.</p>
+            <p>Created by Kowal</p>
             <ul>
                 <li><a href="index.html">Strona główna</a></li>
                 <li><a href="regulamin.html">Regulamin</a></li>
